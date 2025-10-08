@@ -13,20 +13,93 @@
         }
         h1 {
             color: #669900;
+            margin-top: 30px;
+        }
+        table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        th, td {
+            border: 2px solid #99cc00;
+            padding: 12px;
+        }
+        th {
+            background-color: #ccff99;
+            color: #333;
+            font-size: 18px;
+        }
+        td {
+            font-size: 17px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2ffe6;
+        }
+        tr:hover {
+            background-color: #e6ffcc;
         }
         a {
             text-decoration: none;
             font-weight: bold;
             color: #333;
+            background-color: #ccff99;
+            padding: 6px 12px;
+            border-radius: 6px;
+        }
+        a:hover {
+            background-color: #99cc66;
         }
     </style>
 </head>
 <body>
-    <h1>Tutaj będzie tabela</h1>
+    <h1>Cennik cukierni "Słodkie Marzenie"</h1>
 
-    <p style="margin-top:40px;">
+    <table>
+        <tr>
+            <th>Nazwa ciasta</th>
+            <th>Składniki główne</th>
+            <th>Cena za porcję</th>
+            <th>Dostępność</th>
+        </tr>
+        <tr>
+            <td>Sernik domowy</td>
+            <td>twaróg, jajka, wanilia</td>
+            <td>8 zł</td>
+            <td>✔️</td>
+        </tr>
+        <tr>
+            <td>Szarlotka</td>
+            <td>jabłka, cynamon, kruszonka</td>
+            <td>7 zł</td>
+            <td>✔️</td>
+        </tr>
+        <tr>
+            <td>Tiramisu</td>
+            <td>mascarpone, kawa, kakao</td>
+            <td>10 zł</td>
+            <td>❌</td>
+        </tr>
+        <tr>
+            <td>Tort czekoladowy</td>
+            <td>kakao, śmietana, czekolada</td>
+            <td>12 zł</td>
+            <td>✔️</td>
+        </tr>
+        <tr>
+            <td>Babeczka waniliowa</td>
+            <td>wanilia, mleko, masło</td>
+            <td>5 zł</td>
+            <td>✔️</td>
+        </tr>
+    </table>
+
+    <p>
         <a href="menu_brokos.html">🔙 Wróć do menu</a>
     </p>
+
     <p>© Brokos</p>
 </body>
 </html>
+
