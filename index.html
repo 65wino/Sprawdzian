@@ -1,9 +1,12 @@
+<!-- index_brokos.html -->
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Brokos">
     <title>Wykonał BROKOS</title>
+    <!-- Strona: Słodkie Marzenie -->
+    <!-- Autor: Brokos, Data: 08.10.2025 -->
     <style>
         body {
             background-color: #fff2e6;
@@ -16,7 +19,7 @@
             text-transform: uppercase;
             font-size: 60px;
         }
-        img {
+        img.logo {
             width: 700px;
             height: 200px;
             border: 6px solid yellow;
@@ -46,10 +49,24 @@
             list-style-type: square;
             font-size: 20px;
         }
-        .menu-link {
-            display: block;
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .links a {
             text-align: center;
-            margin-top: 30px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .links img {
+            display: block;
+            margin: 0 auto 10px auto;
+            border: 3px solid #999;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -60,7 +77,7 @@
     <p style="font-size:18px; color:#b34700; font-family:Georgia;">
         <b><u>Nasza cukiernia</u></b> <i>„Słodkie Marzenie”</i> to miejsce, gdzie <span style="color:#ff0066;">pasja do pieczenia</span> spotyka się 
         z <span style="font-family:'Comic Sans MS'; font-size:20px;">miłością do słodyczy</span>. Oferujemy świeże ciasta, torty i ciasteczka przygotowywane z najwyższej jakości składników. 
-        <img src="logo_brokos.jpg" alt="Logo cukierni Słodkie Marzenie - ciasto i filiżanka kawy">
+        <img src="logo_brokos.jpg" alt="Logo cukierni Słodkie Marzenie - ciasto i filiżanka kawy" class="logo">
         Każdy nasz wypiek powstaje z dbałością o smak i wygląd, aby cieszyć zarówno oczy, jak i podniebienie. 
         Nasze produkty to idealny wybór na każdą okazję — od codziennej kawy po wyjątkowe uroczystości.
     </p>
@@ -84,11 +101,23 @@
         <li>Indywidualne projekty tortów artystycznych</li>
     </ul>
 
-    <div class="menu-link">
+    <div class="links">
         <a href="menu_brokos.html">
-            <img src="menu_icon.png" alt="Ikona menu - przejdź do strony menu" width="100" height="100">
+            <img src="menu_icon.png" width="100" height="100" alt="Ikona menu">
+            Menu
         </a>
-        <p><b>Przejdź do strony menu</b></p>
+        <a href="formularz_brokos.html">
+            <img src="form_icon.png" width="100" height="100" alt="Ikona formularza">
+            Formularz
+        </a>
+        <a href="tabela_brokos.html">
+            <img src="table_icon.png" width="100" height="100" alt="Ikona tabeli">
+            Tabela
+        </a>
+        <a href="poczta_brokos.html">
+            <img src="mail_icon.png" width="100" height="100" alt="Ikona poczty">
+            Poczta
+        </a>
     </div>
 
     <p style="text-align:center; margin-top:40px;">© Brokos</p>
