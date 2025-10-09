@@ -3,17 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Brokos">
-    <title>Formularz zamówienia - Słodkie Marzenie</title>
-    <!-- Autor: Brokos, Data: 08.10.2025 -->
+    <title>Formularz zamówienia - Animal World</title>
     <style>
         body {
-            background-color: #e6f9ff;
+            background-color: #e3f2fd;
             font-family: Arial, sans-serif;
             text-align: center;
-        }
-        h1 {
-            color: #006699;
-            margin-top: 30px;
         }
         form {
             background-color: white;
@@ -36,7 +31,7 @@
         }
         input[type="submit"], input[type="reset"] {
             width: 40%;
-            background-color: #006699;
+            background-color: #1976d2;
             color: white;
             border: none;
             padding: 10px;
@@ -45,23 +40,23 @@
             margin: 10px;
         }
         input[type="submit"]:hover, input[type="reset"]:hover {
-            background-color: #0099cc;
+            background-color: #42a5f5;
         }
         a {
             text-decoration: none;
             font-weight: bold;
             color: #333;
-            background-color: #cceeff;
+            background-color: #bbdefb;
             padding: 6px 12px;
             border-radius: 6px;
         }
         a:hover {
-            background-color: #99ddff;
+            background-color: #90caf9;
         }
     </style>
 </head>
 <body>
-    <h1>Formularz zamówienia ciasta</h1>
+    <h1>Formularz zamówienia akcesoriów</h1>
 
     <form>
         <label for="imie">Imię i nazwisko:</label>
@@ -70,23 +65,23 @@
         <label for="email">Adres e-mail:</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="produkt">Wybierz ciasto:</label>
+        <label for="produkt">Wybierz produkt:</label>
         <select id="produkt" name="produkt">
-            <option>Sernik domowy</option>
-            <option>Szarlotka</option>
-            <option>Tiramisu</option>
-            <option>Tort czekoladowy</option>
-            <option>Babeczka waniliowa</option>
+            <option>Obroża skórzana</option>
+            <option>Legowisko XL</option>
+            <option>Kuweta z filtrem</option>
+            <option>Zabawka gumowa</option>
+            <option>Klatka dla gryzoni</option>
         </select>
 
-        <label for="ilosc">Ilość porcji:</label>
-        <input type="number" id="ilosc" name="ilosc" min="1" max="20" value="1">
+        <label for="ilosc">Ilość sztuk:</label>
+        <input type="number" id="ilosc" name="ilosc" min="1" max="50" value="1">
 
         <label for="data">Data odbioru:</label>
         <input type="date" id="data" name="data">
 
-        <label for="wiadomosc">Uwagi do zamówienia:</label>
-        <textarea id="wiadomosc" name="wiadomosc" rows="4" placeholder="np. napis na torcie, bez orzechów..."></textarea>
+        <label for="uwagi">Uwagi:</label>
+        <textarea id="uwagi" name="uwagi" rows="4" placeholder="np. preferowany kolor, rozmiar, gatunek zwierzęcia..."></textarea>
 
         <br><br>
         <input type="submit" value="Wyślij zamówienie">
